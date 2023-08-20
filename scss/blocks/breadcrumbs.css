@@ -1,0 +1,25 @@
+.breadcrumbs {
+  margin-bottom: 24px;
+}
+.breadcrumbs__inner {
+  display: flex;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+}
+.breadcrumbs__btn {
+  text-decoration: none;
+  color: #817b77;
+  position: relative;
+  margin-right: 10px;
+}
+.breadcrumbs__btn:hover {
+  text-decoration: underline;
+}
+.breadcrumbs__btn--slash::before {
+  content: "/";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  transform: translateY(-50%);
+}/*# sourceMappingURL=breadcrumbs.css.map */

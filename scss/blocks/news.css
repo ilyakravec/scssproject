@@ -1,0 +1,144 @@
+.news__title {
+  font-family: "Arsenal", sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  margin-bottom: 32px;
+}
+.news__inner {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.news__box-left {
+  display: flex;
+}
+.news__box-left__btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  border: 1px #6fcbd5 solid;
+  padding: 12px 16px;
+  margin: 0px;
+  transition: 0.3s linear;
+}
+.news__box-left__btn:hover {
+  color: #fff;
+  background-color: #6fcbd5;
+}
+.news__box-right {
+  display: flex;
+}
+.news__box-right__inner {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.news__box-right__btn__low-resolution {
+  display: none !important;
+}
+.news__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 40px;
+  margin-bottom: 64px;
+}
+.news__grid__item__data {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.5;
+}
+.news__grid__item__img {
+  margin-bottom: 20px;
+  width: 100%;
+  display: block;
+}
+.news__grid__item__text {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.input__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.custom-date-input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  background-color: none;
+  padding: 8px;
+  font-size: 14px;
+  color: #333;
+  cursor: text;
+  border-bottom: #817B77 1px solid;
+  transition: 0.2s ease-out;
+}
+.custom-date-input:last-child {
+  margin-right: 20px;
+}
+.custom-date-input::-webkit-inner-spin-button, .custom-date-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.custom-date-input::-webkit-calendar-picker-indicator {
+  background-image: url("/img/calendar.svg");
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  cursor: pointer;
+}
+.custom-date-input:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.custom-date-input:focus {
+  outline: none;
+  border-color: #2196F3;
+  box-shadow: 0 0 5px rgba(33, 150, 243, 0.5);
+}
+.custom-date-input::-moz-placeholder {
+  color: #f7f7f7;
+}
+.custom-date-input::placeholder {
+  color: #f7f7f7;
+}
+.custom-date-input:-ms-input-placeholder {
+  color: #f7f7f7;
+}
+.custom-date-input::-ms-input-placeholder {
+  color: #f7f7f7;
+}
+.custom-date-input:-moz-placeholder-shown {
+  color: #f7f7f7;
+}
+.custom-date-input:placeholder-shown {
+  color: #f7f7f7;
+}
+
+.news__box-right__btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #6fcbd5;
+  border: 1px solid #6fcbd5;
+  padding: 12px 24px;
+  font-weight: 400;
+  font-size: 16px;
+  transition: 0.3s linear;
+}
+.news__box-right__btn:hover {
+  background-color: #6fcbd5;
+  color: #fff;
+}/*# sourceMappingURL=news.css.map */

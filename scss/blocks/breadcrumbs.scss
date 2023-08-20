@@ -1,0 +1,30 @@
+.breadcrumbs {
+    margin-bottom: 24px;
+
+    &__inner{
+        display: flex;
+        column-gap: 5px;
+    }
+
+    &__btn{
+        text-decoration: none;
+
+        color: #817b77;
+
+        position: relative;
+        margin-right: 10px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__btn--slash{
+        &::before{
+            content: "/";
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            right: -10px;
+            transform: translateY(-50%);
+        }
+    }
+}

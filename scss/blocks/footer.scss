@@ -1,0 +1,102 @@
+.footer {
+
+    background: rgba(111, 203, 213, 0.15);
+    padding: 65px 50px;
+    display: block;
+    margin: 0 15px;
+
+    &__inner-left{
+        display: flex;
+        column-gap: 178px;
+    }
+
+    &__inner-left__about{
+        display: block;
+    }
+
+    &__inner-left__about__call{
+        color: #333;
+        font-weight: 500;
+        text-decoration: none;
+        margin-bottom: 8px;
+
+        transition: .3s linear;
+
+        &:hover{
+            color: #7C6757;
+        }
+        &:last-child{
+            margin-bottom: 0px;
+        }
+    }
+
+    &__inner-left__about__call__inner{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__inner-left__about__call__text{
+        font-size: 15px;
+        font-weight: 500;
+
+        margin-bottom: 15px;
+    }
+
+    &__inner-left__about__inner{
+        margin-bottom: 23px;
+    }
+
+    &__inner-left__about__inner__email{
+        color: #333;
+        font-weight: 500;
+        font-size: 15px;
+        text-decoration: none;
+
+        transition: .3s ease-out;
+    
+        &:hover{
+            color: #7C6757;
+    
+        }
+    }
+
+    &__inner-left__about__inner__location{
+        font-weight: 500;
+        font-size: 15px;
+        white-space: nowrap;
+        margin-bottom: 8px;
+    }
+
+    &__inner-left__nav{
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+    &__inner-left__nav__link{
+        color: #333;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-decoration: none;
+        
+        transition: .3s linear;
+
+        &:hover {
+            color: #7c6757;
+        }
+    }
+
+    &__inner-right__img{
+        margin-bottom: 32px;
+    }
+
+    &__inner-right__text__social{
+        display: flex;
+        column-gap: 15px;
+    }
+
+    &__inner{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+}

@@ -1,0 +1,131 @@
+
+@import "./blocks/resetter.scss";
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+
+}
+.container {
+    width: 100%;
+    max-width: 1240px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+}
+
+@import "./blocks/header.css";
+@import "./blocks/navigation.css";
+@import "./blocks/breadcrumbs.css";
+@import "./blocks/news.css";
+@import "./blocks/pagination.css";
+@import "./blocks/footer.css";
+
+
+
+@media (max-width:1170px){
+
+
+    //header navigation
+    .nav{
+        display: none;
+    }
+    .nav__burger__menu{
+        display: block;
+    }
+
+
+    //news
+    .news__box-left{
+        margin-bottom: 32px;
+    }
+
+    .news__inner{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .news__grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+    @media (max-width:970px){
+    //bottom
+
+    .footer__inner{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__inner-right{
+        margin-bottom: 40px
+    }
+}
+
+    @media (max-width:830px){
+    .news__box-right{
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    .news__box-right__btn:first-child{
+        margin-right: 40px;
+    }
+    .footer__inner-left{
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+}
+    @media (max-width:568px){
+    .news__grid{
+        grid-template-columns: 1fr;
+    }
+    .footer__inner-left__about__inner__location{
+        white-space: wrap;
+    }
+
+}
+    @media (max-width:548px){
+    .pagination__item__counter--3{
+        display: none;
+    }
+    .pagination__item__counter--11{
+        display: none;
+    }
+
+}
+    @media (max-width:452px){
+    .news__box-right__inner {
+        display: block;
+
+    }
+    .news__box-right__btn{
+        margin-right: 20px !important;
+    }
+    .input__wrapper{
+        width: 100%;
+        max-width: 210px;
+        margin-bottom: 20px;
+    }
+    .news__box-right__btn:first-child {
+        margin-right: 0px;
+    }
+    .pagination__item__counter--2{
+        display: none;
+    }
+    .pagination__item__counter--12{
+        display: none;
+    }
+    .news__box-right__btn__low-resolution{
+        display: inline-block !important ;
+        
+    }
+    .news__box-right__btn__reset{
+        display: none;
+    }
+
+}
